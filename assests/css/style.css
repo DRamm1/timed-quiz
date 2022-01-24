@@ -1,0 +1,155 @@
+ /* Universal stying */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0 0 0;
+}
+
+/* a tag/link styling */
+a {
+  text-decoration: none;
+}
+
+/* Heading 1 styling */
+h1 {
+  text-align: center;
+  margin: 15px 0 0 15px;
+}
+
+/* Heading 2 styling */
+h2 {
+  color: grey;
+  border-top: 1px solid grey;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Initial container styling for the quiz instructions and content */
+.begin-quiz {
+  text-align: center;
+}
+
+/* Start button styling */
+.init-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+/* Used to hide content not ready for display */
+.hide {
+  display: none;
+}
+
+/* Buttons */
+.Btns {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 0;
+}
+
+/* Button styling */
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 12px;
+  border: none;
+  width: auto;
+  background-color: rgb(27, 27, 216);
+  border-radius: 12px;
+  font-size: large;
+  margin: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Slightly lighter color to distinguish between what you are hovering over and the additional options */
+button:hover {
+  background-color: rgba(58, 58, 211, 0.897);
+}
+
+/* Displayes the wrong answers in grey */
+.btn.wrong {
+  background-color: grey;
+}
+
+/* For enetering initials once complete */
+input[type="text"] {
+  border: 1px solid grey;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 12px;
+  margin: 12px 0 0 0;
+}
+
+/* Page for HighScores */
+.hScore {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* Centeres the Spotlight/HS page */
+.center {
+  text-align: center;
+}
+
+/* Styling for the highscore and time at the top of the page*/
+.HighScores a,
+.timer {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Styling specifically for the highscores link at the top of the page */
+.HighScores a {
+  color: rgba(58, 58, 211, 0.897);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* changes when hovering over the High Scores link at the top of the page */
+.HighScores a:hover {
+  color: grey;
+}
+
+/* styling for the incoming name and highscore after the quiz is complete */
+.name-div,
+.score-div {
+  flex: 1 45%;
+  padding: 10px 0;
+  border: 1px solid green;
+}
+
+/* Kept the media fairly simple as there isn't really a need to change much as the flexbox properties already apply to smaller screens */
+@media screen and (max-width: 768px) {
+  .Btns {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+    }
+  }
+  
+@media screen and (max-width: 575px) {
+.Btns {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 0;
+  }
+}
